@@ -61,10 +61,30 @@
 	color:#FFF;
 }
 
-.bottom{
-	position: fixed;
-    bottom: 0;
-    width:60%;
+div.row.featurette{
+	margin-right:15px;
+}
+
+div.col-md-5.col-md-pull-7 img{
+	margin: 7.5% auto;
+}
+
+h4.social-heading {
+	text-decoration:underline;
+}
+
+.social-link{
+	text-decoration:none;
+	color:#fff;
+}
+
+.social-link:hover, .social-link:visited, .social-link:active{
+	text-decoration:none;
+	color:#bbb;
+}
+
+h2.SecondTeamHeader{
+	margin-top:0;
 }
 
 footer{
@@ -72,12 +92,38 @@ footer{
 	background-image:linear-gradient(to bottom,#3c3c3c 0,#222 100%);
 }
 
+.bottom{
+	position: fixed;
+    bottom: 0;
+}
+
 footer>.row>div{
 	font-size:x-small;
 	color:gray;
 }
 
+.stream{
+	width: 60.4vw; 
+    height: 35vw; /* height:width ratio = 9/16 = .5625  */
+    background: pink;
+    max-height: 100vh;
+    max-width: 177.78vh; /* 16/9 = 1.778 */
+    margin: auto;
+    /*position:absolute*/
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */
+}
+
 @media (max-width:767px){
+	
+	.stream{
+		width:73vw;
+		height:45vw;
+	}
+	
+	.theme-showcase{
+		width:75%;
+	}
 	
 	.navbar-brand img{
 		max-height:150%;
